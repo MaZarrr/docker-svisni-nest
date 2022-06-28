@@ -25,6 +25,6 @@ RUN npm install --only=production
 
 COPY . .
 
-COPY --from=development /usr/src/app/dist ./dist
+COPY --from=development /www/html/docker-svisni-nest/dist ./dist
 
 CMD ["node", "dist/main"]

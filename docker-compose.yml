@@ -15,7 +15,7 @@ services:
         networks:
             - nesjs-network
         volumes:
-            - .:/usr/src/app
+            - .:/www/html/docker-svisni-nest/src
             - /usr/src/app/node_modules
         restart: unless-stopped
     prod:
@@ -32,8 +32,8 @@ services:
         networks:
             - nesjs-network
         volumes:
-            - .:/usr/src/app
-            - /usr/src/app/node_modules
+            - .:/www/html/docker-svisni-nest/src/
+            - /www/html/docker-svisni-nest/node_modules
         restart: unless-stopped
 
 networks:
