@@ -11,7 +11,6 @@ services:
         command: npm run start:debug
         ports:
             - 3333:3333
-            - 9229:9229
         networks:
             - nesjs-network
         volumes:
@@ -28,7 +27,6 @@ services:
         command: npm run start:prod
         ports:
             - 3333:3333
-            - 9229:9229
         networks:
             - nesjs-network
         volumes:
