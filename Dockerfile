@@ -1,6 +1,6 @@
 FROM node:16.15.1-alpine AS development
 
-WORKDIR /usr/src/app
+WORKDIR /www/html/docker-svisni-nest/src
 
 COPY package*.json ./
 
@@ -17,7 +17,7 @@ FROM node:16.15.1-alpine as production
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 
-WORKDIR /usr/src/app
+WORKDIR /www/html/docker-svisni-nest/src
 
 COPY package*.json ./
 
